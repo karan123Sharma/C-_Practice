@@ -36,7 +36,7 @@ int main()
         {
             for(int j=1;j<final.size();j++){
                 if(final.at(i)==final.at(j)){
-                    final.pop_back(final.at(i));
+                    // final.pop_back(i);
                 }
             }
         }
