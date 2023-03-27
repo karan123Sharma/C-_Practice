@@ -1,19 +1,37 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-    int a;
-    cin >> a;
-    for (int i = 0; i < a; i++)
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
     {
-        for (int j = 0; j < i; j++)
+        int a, count = 0;
+        cin >> a;
+        int arr[a];
+        bool flag = false;
+        for (int i = 0; i < a; i++)
         {
-            cout << " ";
+            cin >> arr[i];
         }
-        for (int k = 0; k < 2 * i + 1; k++)
+
+        for (int i = 0; i < a; i++)
         {
-            cout << "* ";
+            if ((arr[i + 1] != arr[i - 1]) && (i != 0 || i != a - 1))
+            {
+                count++;
+            }
         }
-        cout<<endl;
+        if (count != 0)
+        {
+            cout << count << endl;
+        }
+        else
+        {
+            cout << count << endl;
+        }
     }
+    return 0;
 }

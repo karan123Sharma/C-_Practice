@@ -20,7 +20,7 @@ void InsertAtLast(Node * &head,int Val){
     if(head == NULL){
         head = New_Node;
     }
-    Node * Temp = head;
+    Node * Temp = head; 
     while(Temp->next!=NULL){
         Temp->next;
     }

@@ -61,7 +61,9 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "random": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "set": "cpp",
+        "regex": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

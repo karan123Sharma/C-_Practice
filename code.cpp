@@ -1,23 +1,37 @@
 #include <iostream>
+#include <vector>
+#include <math.h>
 using namespace std;
 
-int main() {
+int main()
+{
 	// your code goes here
-	int t;
-	cin>>t;
-	while(t--){
-	    int a;
-	    string str,A,B;
-	    cin>>str;
-	    for(int i=0;i<str.size();i++){
-	        A+=str[i];
-            cout<<A<<" ";
-	        str.erase(str[i]);
-            cout<<str;
-	        // B+=str[i+1];
-            // str.erase(str[i+1]);
-	       }
-	       cout<<A<<"   "<<B<<endl;
+	int n = 555;
+	int count = 0;
+	vector<int> res;
+	// Code here.
+	while (n > 0)
+	{
+		int lastdigit = n % 10;
+		res.push_back(lastdigit);
+		n = n / 10;
+	}
+	vector<int> num = res;
+	reverse(res.begin(), res.end());
+	for (int i = 0; i < res.size(); i++)
+	{
+		if (res[i] == num[i])
+		{
+			count++;
+		}
+	}
+	if (count == num.size())
+	{
+	   cout<< "Yes";
+	}
+	else
+	{
+		cout<< "No";
 	}
 	return 0;
 }
