@@ -1,1 +1,0 @@
-    insert(newnode,12);
