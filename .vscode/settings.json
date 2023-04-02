@@ -63,7 +63,12 @@
         "random": "cpp",
         "map": "cpp",
         "set": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "unordered_set": "cpp",
+        "__tree": "cpp",
+        "deque": "cpp",
+        "memory_resource": "cpp",
+        "iterator": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

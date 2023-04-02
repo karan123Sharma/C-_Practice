@@ -5,7 +5,7 @@ string CeaserCypher(string Str, int key)
     string Enc;
     for (int i = 0; i < Str.size(); i++)
     {
-        Enc += (((Str[i] - 'a')  + key ) % 26) + 'a';
+        Enc += (((Str[i] - 'a')  + 3 ) % 26) + 'a';
     }
     return Enc;
 }
@@ -14,7 +14,7 @@ void Decrypt(string Enc, int key)
     string Dec;
     for (int i = 0; i < Enc.size(); i++)
     {
-        Dec += (((Enc[i] - 'a') - key) % 26) + 'a';
+        Dec += (((Enc[i] - 'a') - 3) % 26) + 'a';
     }
     cout << Dec;
 }
@@ -34,12 +34,12 @@ int main()
 {
     string Str;
     cin >> Str;
-    int key;
-    cin >> key;
+    // int key;
+    // cin >> key;
     string E_Text;
-    string Enc = CeaserCypher(Str, key);
+    string Enc = CeaserCypher(Str, 3);
     cout << Enc;
     cout << endl;
     cout << "Decrypt" << endl;
-    Decrypt(Enc, key);
+    Decrypt(Enc, 3);
 }

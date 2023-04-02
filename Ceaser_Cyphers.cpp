@@ -21,10 +21,14 @@ string  Ceaser_Decryption(string Enc, int key)
 int main()
 {
     string Str = "mitadt";
+    cout<<"Text----"<<endl;
+    cout<<"mitadt"<<endl;
     int key;
     cin >> key;
+    cout<<"Encrypted----"<<endl;
     string Enc = Ceaser_Encrypt(Str,key);
     cout<<Enc<<endl;
+    cout<<"Decrypted----"<<endl;
     string Dec = Ceaser_Decryption(Enc,key);
     cout<<Dec;
 }

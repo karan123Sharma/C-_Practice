@@ -1,4 +1,5 @@
 #include <iostream>
+#include <map>
 using namespace std;
 
 int main()
@@ -8,30 +9,21 @@ int main()
     cin >> t;
     while (t--)
     {
-        int a, count = 0;
+        map<int, int> ump;
+        int a;
         cin >> a;
         int arr[a];
-        bool flag = false;
         for (int i = 0; i < a; i++)
         {
             cin >> arr[i];
         }
+	    for(int i=0;i<a;i++){
+	     ump[arr[i]]++;
+        }
+        for(auto i:ump){
+            cout<<i.first<<" "<<i.second<<endl;
+        }
 
-        for (int i = 0; i < a; i++)
-        {
-            if ((arr[i + 1] != arr[i - 1]) && (i != 0 || i != a - 1))
-            {
-                count++;
-            }
-        }
-        if (count != 0)
-        {
-            cout << count << endl;
-        }
-        else
-        {
-            cout << count << endl;
-        }
     }
     return 0;
 }
