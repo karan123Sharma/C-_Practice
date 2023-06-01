@@ -1,24 +1,21 @@
 #include <iostream>
 using namespace std;
-int counter = 0;
-void print1(string str, int n)
-{
- 
-    print1(str,n);
-    cout << str;
-    if (counter == n)
+int main(){
+    int num;
+    cin>>num;
+    switch (num)
     {
-        return;
+    case 1:
+       cout<<"One"<<endl;
+        break;
+    case 2:
+       cout<<"Two"<<endl;
+        break;
+    case 3:
+    cout<<"Three"<<endl;
+    break;
+    default:
+    cout<<"MAA huDA"<<endl;
+        break;
     }
-       counter++;
-
-
-
-}
-int main()
-{
-    int n;
-    cin >> n;
-    string str = "Karan";
-    print1(str, n);
-}
+   }

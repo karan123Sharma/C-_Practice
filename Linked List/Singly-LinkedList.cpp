@@ -3,12 +3,12 @@ using namespace std;
 class Node
 {
 public:
-    int data;
+    int dat;
     Node *next;
 
     Node(int data)
     {
-        this->data = data;
+        this->dat = data;
         this->next = NULL;
     }
 };
@@ -47,7 +47,7 @@ void printlist(Node *head)
     Node *temp = head;
     while (temp != NULL)
     {
-        cout << temp->data << " ";
+        cout << temp->dat << " ";
         temp = temp->next;
     }
 }

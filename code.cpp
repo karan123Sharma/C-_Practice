@@ -1,37 +1,93 @@
 #include <iostream>
-#include <vector>
-#include <math.h>
+#include <queue>
 using namespace std;
-
-int main()
+struct Process
 {
-	// your code goes here
-	int n = 555;
-	int count = 0;
-	vector<int> res;
-	// Code here.
-	while (n > 0)
+	int id, at, bt, ft;
+	float wt, tat;
+};
+Process p[10], p1[10];
+queue<int> q1;
+int Input()
+{
+	int n;
+	cout << "Enter the Number of Process.. : ";
+	cin >> n;
+	for (int i = 1; i <= n; i++)
 	{
-		int lastdigit = n % 10;
-		res.push_back(lastdigit);
-		n = n / 10;
+		cout << "Enter the Arrival Time and Burst Time for  " << i << ": ";
+		cin >> p[i].at >> p[i].bt;
+		p[i].id = i;
 	}
-	vector<int> num = res;
-	reverse(res.begin(), res.end());
-	for (int i = 0; i < res.size(); i++)
+	for (int i = 1; i <= n; i++)
 	{
-		if (res[i] == num[i])
+		p1[i] = p[i];
+	}
+	return n;
+}
+void Logic(int n)
+{
+	int i = 1, m, Q_t, val;
+	cout << "Enter the Quantum Time.. :";
+	cin >> Q_t;
+	val = p1[1].at;
+	for (i = 1; i <= n && p1[i].at <= val; i++)
+	{
+		q1.push(p1[i].id);
+	}
+	while (!q1.empty())
+	{
+		m = q1.front();
+		q1.pop();
+		if (p1[m].bt >= Q_t)
 		{
-			count++;
+			val = val + Q_t;
+			p1[m].bt -=Q_t;
+		}
+		else
+		{
+			val = val + p1[m].bt;
+			p1[m].bt = 0;
+
+		}
+		while (i <= n && p1[i].at <= val)
+		{
+			q1.push(p1[i].id);
+			i++;
+		}
+		if (p1[m].bt > 0)
+		{
+			q1.push(p[m].id);
+		}
+		else
+		{
+			p[m].ft = val;
 		}
 	}
-	if (count == num.size())
-	{
-	   cout<< "Yes";
+}
+void TurnWait(int n){
+	for(int i=1;i<=n;i++){
+		p[i].tat = p[i].ft - p[i].at;
+		p[i].wt = p[i].tat - p[i].bt;
+		p[0].tat = p[0].tat + p[i].tat;
+		p[0].wt = p[0].wt + p[i].wt;
 	}
-	else
-	{
-		cout<< "No";
+	p[0].tat =p[0].tat /n;
+	p[0].wt =p[0].wt /n;
+}
+void Display(int n){
+	cout << "\nProcess\tAT\tBT\tFT\tTAT\tWT";
+	for(int i=1;i<=n;i++){
+		cout<<"\n"<<p[i].id<<"\t"<<p[i].at<<"\t"<<p[i].bt<<"\t"<<p[i].ft<<"\t"<<p[i].tat<<"\t"<<p[i].wt<<endl;
 	}
-	return 0;
+	cout<<endl;
+	cout<<p[0].tat;
+	cout<<p[0].wt;
+}
+int main()
+{
+	int n = Input();
+	Logic(n);
+	TurnWait(n);
+	Display(n);
 }

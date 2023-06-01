@@ -68,7 +68,25 @@
         "__tree": "cpp",
         "deque": "cpp",
         "memory_resource": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "queue": "cpp",
+        "climits": "cpp",
+        "cfenv": "cpp",
+        "cinttypes": "cpp",
+        "condition_variable": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "forward_list": "cpp",
+        "fstream": "cpp",
+        "future": "cpp",
+        "iomanip": "cpp",
+        "list": "cpp",
+        "numeric": "cpp",
+        "scoped_allocator": "cpp",
+        "stack": "cpp",
+        "typeindex": "cpp",
+        "valarray": "cpp",
+        "math.h": "c"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
