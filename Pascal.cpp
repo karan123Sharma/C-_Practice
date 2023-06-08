@@ -1,19 +1,17 @@
 #include<iostream>
-#include<vector>
+#include<fstream>
 using namespace std;
 int main(){
-    int numRows = 5;
-    vector<vector<int> > num;
-    for(int i=0;i<numRows;i++){
-        for(int j=0;j<num[0].size();j++){
-            num[j].push_back(0);
-            cout<<num[i][j];
-        }
+    fstream myfile;
+    myfile.open("xyz.txt");
+    if(!myfile){
+        cout<<"File not created";
     }
-    // for(int i=0;i<numRows;i++){
-    //     for(int j=0;j<num[0].size();j++){
-    //        cout<<num[i][j]<<" ";
-    //     }
-    //     cout<<endl;
-    // }
+    else{
+        cout << "File created successfully!";
+        myfile << "Hello";
+        
+        ifstream fin("xyz.txt");
+        myfile.close();
+    }
 }

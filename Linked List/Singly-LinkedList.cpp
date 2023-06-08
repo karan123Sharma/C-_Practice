@@ -5,7 +5,6 @@ class Node
 public:
     int dat;
     Node *next;
-
     Node(int data)
     {
         this->dat = data;
