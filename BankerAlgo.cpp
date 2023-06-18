@@ -60,17 +60,17 @@ int main()
 	if(f[i]==0)
 	{
 		flag=0;
-		printf("The following system is not safe");
+		// printf("The following system is not safe");
 		break;
 	}
 	}
 	
 	if(flag==1)
 	{
-	printf("Following is the SAFE Sequence\n");
-	for (i = 0; i < n - 1; i++)
-		printf(" P%d ->", ans[i]);
-	printf(" P%d", ans[n - 1]);
+	// printf("Following is the SAFE Sequence\n");
+	// for (i = 0; i < n - 1; i++)
+	// 	printf(" P%d ->", ans[i]);
+	// printf(" P%d", ans[n - 1]);
 	}
 	
 

@@ -1,1 +1,1 @@
-    change = true;
+    Delete_at_first(head);
