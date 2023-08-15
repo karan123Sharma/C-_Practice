@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int main() {
     int n, at[20], bt[20], wt[20], tat[20], ct[20], p[20], pri[20], i, j;
     float avwt = 0, avtat = 0;
