@@ -8,7 +8,7 @@ void MergeSort(int arr[], int low, int high)
         return;
     }
     int mid = (low + high) / 2;
-    MergeSort(arr, low, mid);
+    MergeSort(arr, low, mid-1);
     MergeSort(arr, mid + 1, high);
     Merge(arr, low, mid, high);
 }

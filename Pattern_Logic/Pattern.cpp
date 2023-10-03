@@ -773,84 +773,84 @@ void pattern_36(int a){
     }
     cout<<"* ";
 }
-void pattern_37(int a){
-    for(int i=0;i<a*2-1;i++){
-        for(int )
-    }
-}
+//void pattern_37(int a){
+  //  for(int i=0;i<a*2-1;i++){
+//        for(int )
+  //  }
+//}
 int main()
 {
     int a = 6;
     cout << endl;
-    // pattern_1(a);
-    // cout << endl;
-    // pattern_2(a);
-    // cout << endl;
-    // pattern_3(a);
-    // cout << endl;
-    // pattern_4(a);
-    // cout << endl;
-    // pattern_5(a);
-    // cout << endl;
-    // pattern_6(a);
-    // cout << endl;
-    // pattern_7(a);
-    // cout << endl;
-    // pattern_8(a);
-    // cout << endl;
-    // pattern_9(a);
-    // cout << endl;
-    // pattern_10(a);
-    // cout << endl;
-    // pattern_11(a);
-    // cout << endl;
-    // pattern_12(a);
-    // cout << endl;
-    // pattern_13(a);
-    // cout << endl;
-    // pattern_14(a);
-    // cout << endl;
-    // pattern_15(a);
-    // cout << endl;
-    // pattern_16(a); // Pascals Triangle
-    // cout << endl;
-    // pattern_17(a);
-    // cout << endl;
-    // pattern_18(a);
-    // cout << endl;
-    // pattern_19(a);
-    // cout << endl;
-    // pattern_20(a);
-    // cout << endl;
-    // pattern_21(a);
-    // cout << endl;
-    // pattern_22(a);
-    // cout << endl;
-    // pattern_23(a);
-    // cout << endl;
-    // pattern_24(a);
-    // cout << endl;
-    // pattern_25(a);
-    // cout << endl;
-    // pattern_26(a);
-    // cout << endl;
-    // pattern_27(a);
-    // cout << endl;
-    // pattern_28(a);
-    // cout << endl;
-    // pattern_29(a);
-    // cout << endl;
-    // pattern_30(a);
-    // cout << endl;
-    // pattern_31(a); 
-    // cout << endl;
-    // pattern_32(a);
-    // cout << endl;
-    // pattern_33(a);
-    // cout << endl;
-    // pattern_34(a);
-    // cout << endl;
-    // pattern_35(a);
-    // cout << endl;
+     pattern_1(a);
+     cout << endl;
+    pattern_2(a);
+     cout << endl;
+    pattern_3(a);
+     cout << endl;
+     pattern_4(a);
+     cout << endl;
+     pattern_5(a);
+     cout << endl;
+     pattern_6(a);
+     cout << endl;
+    pattern_7(a);
+     cout << endl;
+     pattern_8(a);
+     cout << endl;
+    pattern_9(a);
+     cout << endl;
+     pattern_10(a);
+     cout << endl;
+     pattern_11(a);
+     cout << endl;
+    pattern_12(a);
+     cout << endl;
+     pattern_13(a);
+     cout << endl;
+     pattern_14(a);
+     cout << endl;
+     pattern_15(a);
+     cout << endl;
+     pattern_16(a); // Pascals Triangle
+     cout << endl;
+     pattern_17(a);
+     cout << endl;
+     pattern_18(a);
+     cout << endl;
+     pattern_19(a);
+    cout << endl;
+    pattern_20(a);
+     cout << endl;
+     pattern_21(a);
+     cout << endl;
+     pattern_22(a);
+     cout << endl;
+     pattern_23(a);
+     cout << endl;
+     pattern_24(a);
+     cout << endl;
+     pattern_25(a);
+     cout << endl;
+     pattern_26(a);
+     cout << endl;
+     pattern_27(a);
+     cout << endl;
+     pattern_28(a);
+     cout << endl;
+     pattern_29(a);
+     cout << endl;
+     pattern_30(a);
+    cout << endl;
+//     pattern_31(a); 
+    cout << endl;
+    pattern_32(a);
+     cout << endl;
+     pattern_33(a);
+     cout << endl;
+     pattern_34(a);
+     cout << endl;
+     pattern_35(a);
+     cout << endl;
     pattern_36(a);
 }
